@@ -1,0 +1,148 @@
+
+.logo{
+    text-align: center;
+}
+
+.logo>img {
+    width: 150px;
+    border-radius: 10px;
+    }
+
+nav li {  
+    display: inline-block;
+    margin: 20px 0;
+}  
+
+.nav {
+    text-align: center;
+}
+.nav__list {
+    padding:0;
+    margin: 0;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.nav__list > li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.nav__list>li a:hover{
+    background-color:  #3fe4be;
+    color: white;  
+}
+
+.container > .row:nth-child(2) {
+    background-color: #D8BFD8;
+    border-radius: 10px;
+}
+
+.row:nth-child(2) > div:first-child {
+    color: white;
+    text-align: center;
+}
+
+.row:nth-child(2) h2 {
+    margin-bottom: 5px;
+    font-weight: 700; 
+}
+
+.row:nth-child(2) p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form input {
+    margin: 0px;
+    padding: 10px;
+    height: 15px;
+    width: 170px;
+    border: none;
+}
+
+.input_group, .input_image {
+ display: inline-block;
+}
+
+.input_group {
+    background-color: white;
+    width:  210px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.input_group.submit {
+    background-color: #F2CA50;
+    padding: 9px 0 0 0;
+}
+
+.input_group.submit > input {
+   padding: 0;
+   background-color: #F2CA50;
+   color: white;
+   width: 150px; 
+}
+
+.input_image {
+    margin-left: -7px;
+    margin-top: 5px;
+}
+
+.input_group img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+
+}
+
+.main_photo > img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.main_photo {
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.row.footer::before {
+    content: "";
+    display: block;
+    height: 30px;
+}
+
+.row.footer h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.row.footer p {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.contact_list li {  
+    display: inline-block;
+    margin: 20px 10px;
+}  
+
+.contact_list{
+    padding:0;
+    margin: 0;
+    margin-top: -10px;
+    list-style-type: none;
+    text-align: center;
+}

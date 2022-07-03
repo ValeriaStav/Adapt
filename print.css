@@ -1,0 +1,142 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #038084;
+}
+.container {
+	width: 950px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #CDCDCD;
+	position: relative;
+}
+aside.rightSide {
+	width: 180px;
+	float: right;
+	margin-right: 10px;
+}
+aside.rightSide ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 15px;
+}
+aside.rightSide ul > li > a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	border: 1px solid #FEFEFE;
+	display: block;
+	padding: 15px 30px;
+	text-align: center;
+}
+aside.rightSide ul > li > a:hover {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FEFEFE;
+	/*background-color: #038084;*/
+}
+article {
+	width: 747px;
+	height: auto;
+	float: left;
+	padding-bottom: 15px;
+	border-left: 1px solid #FEFEFE;
+	border-right: 1px solid #FEFEFE;
+	counter-reset: list 0;				/*?*/
+}
+section {
+	margin-bottom: 72px;
+	padding-left: 15px;
+	padding-right: 30px;
+}
+section:first-child > h3 {
+	margin-top: 0;
+	padding-top: 30px;
+}
+section > h3 > span:before {
+	counter-increment: list;			/*?*/
+	content: "Статья " counter(list) ": ";
+}
+section a {
+	text-align: center;
+	float: right;
+	display: inline-block;
+	background-color: red;
+	padding: 10px 18px;
+	color: #FFF;
+	text-decoration: none;
+}
+main {
+	min-height: 100%;
+	background-color: #CDCDCD;
+	padding-bottom: 200px;
+	box-sizing: border-box;
+}
+.clearing {
+	clear: both;
+}
+footer {
+	border-top: 5px solid blue;	
+	height: 195px; 
+	margin: -205px 0 0;
+	position: relative;
+}
+.firstMenu, .rightMenu, .centerMenu {
+	display: block;
+	padding-top: 25px;
+}
+.firstMenu {
+	float: left;
+	width: 250px;
+	margin-left: 50px;
+	text-decoration: none;
+}
+.centerMenu {
+	float: left;
+	width: 250px;
+	margin: 0 0 0 75px;
+}
+.rightMenu {
+	float: right;
+	width: 250px;
+	margin-right: 50px;
+}
+footer nav p {
+	font-weight: bold;
+	text-decoration: underline;
+}
+footer nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer nav ul a {
+	text-decoration: none;
+	color: black;
+}
+footer nav ul a:hover {
+	text-decoration: underline;
+}
+
+@media print {
+	main{
+		background-color: lime;
+	}
+	article {
+		float: none;
+		width: 950px;
+		border: 0px;
+	}
+	aside, footer {
+		display: none;
+	}
+	main article section:nth-child(3) {
+		page-break-after: always; 
+	}
+}
+@media print and (orientation: portrait) {
+	main article section:nth-child(3) {
+		page-break-after: avoid; 
+	}
+}
